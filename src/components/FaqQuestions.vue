@@ -93,13 +93,19 @@ export default {
   }
 
   .faq-questions__questions {
+    padding: 0 5px;
+
     li {
       display: flex;
       align-items: center;
       height: 50px;
       cursor: pointer;
       padding: 0 30px;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
 
       &:hover {
         background-color: #3f4452;
