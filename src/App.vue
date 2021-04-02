@@ -42,6 +42,7 @@ export default {
     height: 500px;
     background-image: linear-gradient(to bottom, #3f4452, #26282c);
     border-radius: 15px;
+    padding: 35px;
   }
 }
 </style>
