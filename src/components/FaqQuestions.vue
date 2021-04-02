@@ -99,7 +99,7 @@ export default {
       height: 50px;
       cursor: pointer;
       padding: 0 30px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
 
       &:hover {
         background-color: #3f4452;
