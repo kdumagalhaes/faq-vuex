@@ -6,7 +6,12 @@
       <h3>Escolha a categoria desejada</h3>
     </div>
     <div class="faq-categories__categories">
-      <li v-for="category in $allFaqCategories" :key="category.id">
+      <li
+        v-for="category in allFaqCategories"
+        :key="category.id"
+        @click="goToQuestion(category)"
+      >
+        <img :src="getIcon(category)" :alt="`${category.title}`" />
         <p>{{ category.title }}</p>
       </li>
     </div>
@@ -24,6 +29,15 @@ export default {
   computed: {
     allFaqCategories() {
       return this.$store.getters.$allFaqCategories;
+    },
+  },
+
+  methods: {
+    goToQuestion(category) {
+      return this.$store.dispatch('getSingleCategory', category);
+    },
+    getIcon(category) {
+      return require(`@/assets/images/${category.icon}`);
     },
   },
 };
