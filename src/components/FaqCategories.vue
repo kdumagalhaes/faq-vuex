@@ -59,7 +59,7 @@ export default {
 
     h3 {
       font-size: 0.813rem;
-      font-weight: 100;
+      font-weight: normal;
     }
   }
 
