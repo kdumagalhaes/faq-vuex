@@ -7,7 +7,7 @@
     </div>
     <div class="faq-categories__categories">
       <li
-        v-for="category in allFaqCategories"
+        v-for="category in $allFaqCategories"
         :key="category.id"
         @click="goToQuestion(category)"
       >
@@ -27,14 +27,15 @@ export default {
   },
 
   computed: {
-    allFaqCategories() {
+    $allFaqCategories() {
       return this.$store.getters.$allFaqCategories;
     },
   },
 
   methods: {
     goToQuestion(category) {
-      return this.$store.dispatch('getSingleCategory', category);
+      this.$store.dispatch('changeCurrentComponent', 'FaqQuestions');
+      this.$store.dispatch('getSingleCategory', category);
     },
     getIcon(category) {
       return require(`@/assets/images/${category.icon}`);
@@ -45,10 +46,12 @@ export default {
 
 <style lang="scss" scoped>
 .faq-categories {
-  color: #fff;
+  color: #f5f6f8;
 
   .faq-categories__top {
     line-height: 1.5rem;
+    margin-bottom: 30px;
+    padding: 35px 0 0 35px;
 
     h1 {
       font-size: 1.25rem;
@@ -57,6 +60,28 @@ export default {
     h3 {
       font-size: 0.813rem;
       font-weight: 100;
+    }
+  }
+
+  .faq-categories__categories {
+    padding: 0 5px;
+
+    li {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      cursor: pointer;
+      padding: 0 30px;
+      margin-bottom: 10px;
+
+      &:hover {
+        background-color: #3f4452;
+      }
+    }
+
+    img {
+      width: 1.5rem;
+      margin-right: 25px;
     }
   }
 }
