@@ -1,12 +1,12 @@
 <template>
-  <div></div>
+  <div>
+    <h1>Perguntas frequantes</h1>
+  </div>
 </template>
 
 <script>
 export default {
-  setup() {
-    return {};
-  },
+  name: 'FaqCategories',
 };
 </script>
 
