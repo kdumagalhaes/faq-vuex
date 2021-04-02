@@ -39,7 +39,7 @@ export default {
   .app {
     width: 100%;
     max-width: 305px;
-    height: 500px;
+    height: auto;
     background-image: linear-gradient(to bottom, #3f4452, #26282c);
     border-radius: 15px;
   }
