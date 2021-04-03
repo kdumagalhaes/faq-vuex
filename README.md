@@ -4,11 +4,11 @@ This is the first challenge of Catalina's bootcamp, and my first contact with Vu
 
 ![](src/assets/screen-shot.png)
 
-## What I've learned:
+## My tools:
 - [x] Vue;
 - [x] BEM CSS;
 - [x] Vuex;
 
 
 
-**You can see the live demo [clicking here!](https://faq-vuex-ruddy.vercel.app/.**
+**You can see the live demo [clicking here!](https://faq-vuex-ruddy.vercel.app/).**
