@@ -1,24 +1,14 @@
-# faq-vuex
+# Vuex challenge - Catalina's bootcamp
 
-## Project setup
-```
-yarn install
-```
+This is the first challenge of Catalina's bootcamp, and my first contact with Vuex! :)
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+![](src/assets/screen-shot.png)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+## What I've learned:
+- [x] Vue;
+- [x] BEM CSS;
+- [x] Vuex;
 
-### Lints and fixes files
-```
-yarn lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+**You can see the live demo [clicking here!](https://faq-vuex-ruddy.vercel.app/.**
